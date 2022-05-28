@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="iphone.html">iphone</a></li>
+        <li><a href="products.html">prouducts</a></li>
+        <li><a href="signup.html">sign up</a></li>
+        <li><a href="about.html">about</a></li>
+        <li id="ter"> <input id="colorpicker" type="color" onchange="colorchange()"></li>
+        <li id="C1">
+          <img
+            id="Pro"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut36OYqb4_mZMmM1TTBtVBuQIcnlMbUrdLg&usqp=CAU"
+            width="20%"
+          />
+        </li>
+      </ul>
+<CEnter>
+    <h1>how to sign up</h1>
+</CEnter>
+ 
+    <p>
+      Open the App Store and tap the sign-in button . Tap Create New Apple ID.
+      ... Follow the onscreen steps. ... Enter your credit card and billing
+      information, then tap Next. ... Confirm your phone number.
+    </p>
+    <center>
+      <div id="id1">
+        <form>
+    
+          <label id="in"> Email: </label>
+          <input id="x" type="Email" />
+          <br />
+          <label id="in"> password </label>
+          <input id="x" type="password" />
+          <br />
+         <input id="imagepicker" type="file" onchange="profilechange()"> 
+
+        </form>
+     
+    </center>
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+     function profilechange(){
+       var newimage = document.getElementById("imagepicker").files[0].name;
+       document.getElementById("Pro").src=newimage;
+     }
+
+
+
+    </script>
+<img src="" alt="">
+<!--
+  <video width="320" height="240" controls autoplay>
+  <source src="movie.mp4 " type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+-->
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/0kL9C0ByuQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <img src="https://miro.medium.com/max/1400/1*5zYYGzcqMWeqza7_d832Uw.png" alt="">
+  </body>
+
+</html>
